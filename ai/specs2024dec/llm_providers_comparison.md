@@ -160,28 +160,172 @@
 ## Инструменты для разработки агентов
 
 ### LangChain
-- Открытый фреймворк
-- Богатая экосистема
-- Поддержка множества LLM
-- Интеграция с различными источниками данных
+- **Базовый функционал**
+  - Открытый фреймворк
+  - Богатая экосистема
+  - Поддержка множества LLM
+  - Интеграция с различными источниками данных
+
+- **Tools и Агенты**
+  - BrowserTools
+    - Selenium интеграция
+    - Playwright поддержка
+    - Веб-скрапинг
+    - Автоматизация браузера
+  - ShellTools
+    - Выполнение bash команд
+    - Файловые операции
+    - Системные вызовы
+    - Безопасное выполнение команд
+  - Human Tools
+    - Интерактивный ввод
+    - Подтверждение действий
+    - Обратная связь
+  - API Tools
+    - REST клиенты
+    - GraphQL интеграция
+    - OAuth поддержка
+
+### Playwright + LLM Tools
+- **Browser Automation**
+  - Headless режим
+  - Multiple browser support
+  - Скриншоты и запись видео
+  - Эмуляция устройств
+- **LLM Integration**
+  - Анализ контента
+  - Навигация по сайтам
+  - Заполнение форм
+  - Извлечение данных
 
 ### AutoGPT
-- Автономные агенты
-- Самостоятельное планирование
-- Открытый исходный код
-- Активное сообщество
+- **Core Features**
+  - Автономные агенты
+  - Самостоятельное планирование
+  - Открытый исходный код
+  - Активное сообщество
+- **Plugins System**
+  - Файловые операции
+  - Веб-браузинг
+  - API интеграции
+  - Пользовательский ввод
 
 ### Microsoft Semantic Kernel
-- Интеграция с Azure OpenAI
-- .NET и Python SDK
-- Корпоративный уровень поддержки
-- Планировщики и оркестрация
+- **Base Features**
+  - Интеграция с Azure OpenAI
+  - .NET и Python SDK
+  - Корпоративный уровень поддержки
+  - Планировщики и оркестрация
+- **Native Skills**
+  - FileSystemSkill
+  - HttpSkill
+  - MathSkill
+  - TextSkill
+  - TimeSkill
+  - ChromiumSkill (браузер)
 
 ### LlamaIndex
-- Специализация на работе с данными
-- RAG (Retrieval Augmented Generation)
-- Индексация и поиск
-- Интеграция с различными источниками
+- **Core Features**
+  - Специализация на работе с данными
+  - RAG (Retrieval Augmented Generation)
+  - Индексация и поиск
+  - Интеграция с различными источниками
+- **Tools**
+  - PDFReader
+  - WebPageReader
+  - FileSystem
+  - DatabaseReader
+
+### AgentOps Frameworks
+
+#### Haystack
+- **Features**
+  - Pipeline архитектура
+  - Модульные компоненты
+  - Готовые агенты
+- **Tools**
+  - FileConverter
+  - PreProcessor
+  - WebRetriever
+  - DocumentStore
+
+#### BabyAGI
+- **Features**
+  - Задаче-ориентированные агенты
+  - Декомпозиция целей
+  - Самообучение
+- **Tools**
+  - TaskPlanner
+  - WebSearch
+  - FileOps
+  - Memory Management
+
+### Специализированные инструменты
+
+#### Browser Automation
+- **Selenium Manager**
+  - Многобраузерная поддержка
+  - JavaScript execution
+  - Скриншоты
+  - Event handling
+- **Playwright Agent**
+  - Cross-browser automation
+  - Network interception
+  - Mobile emulation
+  - PDF generation
+
+#### System Operations
+- **SystemAgent**
+  - Безопасное выполнение команд
+  - Файловые операции
+  - Процесс-менеджмент
+  - Логирование
+- **DockerAgent**
+  - Контейнер-менеджмент
+  - Image operations
+  - Network management
+  - Volume handling
+
+## Безопасность и ограничения агентских инструментов
+
+### Основные риски
+- Неконтролируемое выполнение команд
+- Утечка данных через API
+- Unexpected behavior
+- Resource consumption
+- Security vulnerabilities
+
+### Рекомендации по безопасности
+- **Sandboxing**
+  - Изолированное окружение
+  - Ограничение ресурсов
+  - Контроль доступа
+  - Мониторинг действий
+
+- **Валидация команд**
+  - Белый список разрешенных операций
+  - Проверка параметров
+  - Ограничение времени выполнения
+  - Логирование действий
+
+- **API Security**
+  - Токены и аутентификация
+  - Rate limiting
+  - Scope ограничения
+  - Аудит доступа
+
+- **Data Protection**
+  - Шифрование данных
+  - Контроль доступа
+  - Очистка временных файлов
+  - Безопасное хранение credentials
+
+### Best Practices
+- Использование виртуальных окружений
+- Регулярные security updates
+- Мониторинг и логирование
+- Code review и тестирование
+- Документирование рисков
 
 ## Тренды развития (2024)
 
