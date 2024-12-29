@@ -286,6 +286,231 @@
   - Network management
   - Volume handling
 
+## LLM Агрегаторы и Платформы
+
+### Together AI
+
+#### Поддерживаемые модели
+- **Коммерческие API**
+  - OpenAI GPT-4/3.5
+  - Anthropic Claude
+  - Google Gemini
+- **Open Source модели**
+  - Mixtral
+  - Llama 2
+  - CodeLlama
+  - Stable Diffusion
+  - MPT
+  - Falcon
+
+#### Особенности
+- Единый API для всех моделей
+- Собственная инфраструктура
+- Низкие цены на inference
+- Fine-tuning сервисы
+- Мониторинг и аналитика
+
+#### Цены (примеры)
+- Mixtral-8x7B: $0.0004/1K токенов
+- Llama-2-70B: $0.0007/1K токенов
+- CodeLlama-34B: $0.0006/1K токенов
+- Custom deployment: от $0.25/час
+
+### Anyscale
+
+#### Поддерживаемые модели
+- **Managed Models**
+  - Llama 2 (все версии)
+  - Mixtral
+  - CodeLlama
+  - Mistral
+- **Enterprise интеграции**
+  - OpenAI
+  - Anthropic
+  - Google Vertex AI
+
+#### Особенности
+- Serverless deployment
+- Auto-scaling
+- Ray ecosystem
+- Enterprise support
+- Security compliance
+
+#### Цены
+- Pay-as-you-go
+- Custom enterprise контракты
+- Compute unit pricing
+- Volume discounts
+
+### Replicate
+
+#### Поддерживаемые модели
+- **Text Models**
+  - Llama 2
+  - Mixtral
+  - MPT
+  - BLOOM
+- **Multimodal**
+  - Stable Diffusion
+  - ControlNet
+  - Midjourney alternatives
+- **Audio/Video**
+  - Whisper
+  - AudioCraft
+  - Text-to-Video модели
+
+#### Особенности
+- API + Web UI
+- Custom model hosting
+- Collaborative workspace
+- Version control
+- Community models
+
+#### Цены
+- CPU: $0.0002/минута
+- GPU: от $0.0023/минута
+- Storage: $0.02/GB/месяц
+
+### Deep Infra
+
+#### Поддерживаемые модели
+- **Open Models**
+  - Mixtral
+  - Llama 2
+  - CodeLlama
+  - MPT
+  - BLOOM
+- **Fine-tuned версии**
+  - Mistral Instruct
+  - Nous-Hermes
+  - OpenChat
+  - Stable Beluga
+
+#### Особенности
+- Low-latency inference
+- Auto model selection
+- Cost optimization
+- Enterprise SLA
+- Custom deployments
+
+#### Цены
+- Pay-per-token модель
+- Competitive rates
+- Volume-based discounts
+- Custom enterprise планы
+
+### RunPod AI
+
+#### Поддерживаемые модели
+- **Serverless API**
+  - Llama 2
+  - Mixtral
+  - SDXL
+  - Custom models
+- **GPU Cloud**
+  - PyTorch
+  - TensorFlow
+  - JAX
+  - Custom containers
+
+#### Особенности
+- GPU cloud platform
+- Serverless endpoints
+- Custom containers
+- AutoScale
+- Spot instances
+
+#### Цены
+- GPU Cloud: от $0.2/час
+- Serverless: pay-per-compute
+- Storage: $0.01/GB/месяц
+
+### OneAPI
+
+#### Поддерживаемые модели
+- **Текстовые модели**
+  - OpenAI
+  - Anthropic
+  - Google
+  - Cohere
+  - AI21 Labs
+- **Мультимодальные**
+  - DALL-E
+  - Stable Diffusion
+  - Midjourney
+
+#### Особенности
+- Единый API интерфейс
+- Автоматическое переключение
+- Балансировка нагрузки
+- Мониторинг и аналитика
+- Прозрачное ценообразование
+
+#### Цены
+- Проксирование запросов
+- Markup к ценам провайдеров
+- Volume discounts
+- Enterprise контракты
+
+### Сравнение агрегаторов
+
+#### Преимущества
+1. **Единый интерфейс**
+   - Стандартизированное API
+   - Простая интеграция
+   - Унифицированный биллинг
+
+2. **Отказоустойчивость**
+   - Автоматическое переключение
+   - Балансировка нагрузки
+   - Резервные провайдеры
+
+3. **Оптимизация затрат**
+   - Выбор лучших цен
+   - Объемные скидки
+   - Эффективное использование
+
+4. **Гибкость**
+   - Множество моделей
+   - Кастомные решения
+   - Масштабируемость
+
+#### Недостатки
+1. **Дополнительные расходы**
+   - Наценка за сервис
+   - Затраты на инфраструктуру
+   - Комиссии за транзакции
+
+2. **Задержки**
+   - Дополнительный слой абстракции
+   - Сетевые задержки
+   - Очереди запросов
+
+3. **Зависимость**
+   - От стабильности агрегатора
+   - От доступности провайдеров
+   - От API совместимости
+
+### Рекомендации по выбору агрегатора
+
+#### Для стартапов
+- Together AI
+- Replicate
+- RunPod AI
+- Преимущества: простота, гибкость, pay-as-you-go
+
+#### Для средних компаний
+- Deep Infra
+- Anyscale
+- OneAPI
+- Преимущества: баланс возможностей и цены
+
+#### Для enterprise
+- Together AI Enterprise
+- Anyscale Enterprise
+- Custom решения
+- Преимущества: SLA, поддержка, compliance
+
 ## Безопасность и ограничения агентских инструментов
 
 ### Основные риски
