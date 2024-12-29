@@ -6,8 +6,9 @@
 ## Содержание
 1. Сравнение коммерческих LLM API (OpenAI, Anthropic, Groq)
 2. Обзор открытых моделей (Llama, Mixtral, Qwen, Yi, Gemma)
-3. Инструменты разработки и деплоя
-4. Рекомендации по выбору
+3. Корпоративные LLM сервисы (Microsoft, Google, Meta, Amazon, IBM, Salesforce)
+4. Инструменты разработки и деплоя
+5. Рекомендации по выбору
 
 ## Теги
-#LLM #AIProviders #GPT4 #Claude #Anthropic #OpenAI #Groq #LLMPricing #AIComparison #LanguageModels #AITools #AIAgents #ModelComparison #2024AILandscape #AIInfrastructure #CloudAI #APIComparison #AIServices #EnterpriseAI #AIDevTools #OpenSourceAI #Llama #Mistral #Mixtral #Qwen #Yi #Gemma #LocalAI #Quantization #GGUF #LowResourceAI #EdgeAI #EmbeddedAI #MultilingualAI
+#LLM #AIProviders #GPT4 #Claude #Anthropic #OpenAI #Groq #LLMPricing #AIComparison #LanguageModels #AITools #AIAgents #ModelComparison #2024AILandscape #AIInfrastructure #CloudAI #APIComparison #AIServices #EnterpriseAI #AIDevTools #OpenSourceAI #Llama #Mistral #Mixtral #Qwen #Yi #Gemma #LocalAI #Quantization #GGUF #LowResourceAI #EdgeAI #EmbeddedAI #MultilingualAI #MicrosoftAI #AzureAI #GoogleAI #GeminiAI #VertexAI #AmazonBedrock #IBMWatson #SalesforceEinstein #EnterpriseCompliance #MLOps #CorporateAI #CloudProviders
