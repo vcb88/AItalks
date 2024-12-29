@@ -78,6 +78,85 @@
 - Простой API
 - Хорошая документация
 
+## Корпоративные LLM провайдеры
+
+### Google AI
+- **Gemini Ultra**
+  - Топовая мультимодальная модель
+  - Превосходит GPT-4 в бенчмарках
+  - Доступ через Vertex AI
+- **Gemini Pro**
+  - Универсальная модель
+  - Баланс производительности и стоимости
+  - REST API и SDK
+- **Gemini Nano**
+  - Легкая модель для устройств
+  - On-device inference
+
+#### Цены
+- Gemini Ultra: $0.02/1K токенов (ввод), $0.06/1K токенов (вывод)
+- Gemini Pro: $0.005/1K токенов (ввод), $0.015/1K токенов (вывод)
+- Nano: По запросу
+
+### Microsoft Azure OpenAI
+- Все модели OpenAI
+- Дополнительные возможности:
+  - Корпоративная безопасность
+  - SLA гарантии
+  - Интеграция с Azure services
+  - Fine-tuning
+  - Мониторинг и аналитика
+
+#### Цены
+- Аналогичны OpenAI с дополнительной наценкой за:
+  - SLA
+  - Поддержку
+  - Корпоративные функции
+
+### Amazon Bedrock
+- **Claude** (Anthropic)
+- **Llama 2** (Meta)
+- **Titan**
+  - Собственная модель Amazon
+  - Оптимизирована для AWS
+  - Express и Lite версии
+- **AI21 Jurassic**
+- **Stable Diffusion**
+
+#### Особенности доступа
+- Единый API для всех моделей
+- Pay-per-use модель
+- Reserved capacity options
+- Интеграция с AWS services
+
+### IBM watsonx.ai
+- **Granite** серия:
+  - Large (7B, 13B, 70B параметров)
+  - Expert (для специфических задач)
+  - Small (оптимизированная)
+
+#### Особенности доступа
+- watsonx.ai platform
+- Enterprise security
+- Промышленное применение
+- Строгий compliance
+
+### Meta AI (Llama API)
+- **Llama 2**
+  - 7B, 13B, 70B версии
+  - Chat fine-tuned версии
+  - Code Llama
+- **Meta AI API**
+  - Изображения
+  - Текст
+  - Перевод
+
+#### Особенности доступа
+- Бесплатно для исследований
+- Коммерческая лицензия
+- Self-hosted опции
+- API в бета-версии
+
 ## Инструменты для разработки агентов
 
 ### LangChain
@@ -132,17 +211,35 @@
 - OpenAI GPT-3.5 Turbo
 - Claude 3 Haiku
 - Mixtral через Groq
+- Gemini Pro
+- Meta Llama 2 (13B)
 
 ### Для сложных задач
 - GPT-4 Turbo
 - Claude 3 Opus
-- LLaMA2 70B через Groq
+- Gemini Ultra
+- LLaMA2 70B через Groq/Bedrock
 
 ### Для работы с длинными текстами
 - Claude 3 Opus (200K контекст)
 - GPT-4 Turbo (128K контекст)
+- Gemini Ultra
+
+### Для корпоративного использования
+- Azure OpenAI для экосистемы Microsoft
+- Vertex AI для экосистемы Google
+- Amazon Bedrock для экосистемы AWS
+- IBM watsonx.ai для промышленного применения
 
 ### Для оптимизации затрат
 - Groq (единый тариф)
 - GPT-3.5 Turbo
 - Claude 3 Haiku
+- Gemini Pro
+- Self-hosted Llama 2
+
+### Для соблюдения compliance
+- Azure OpenAI с региональным размещением
+- IBM watsonx.ai
+- Amazon Bedrock с reserved capacity
+- Vertex AI с enterprise уровнем
